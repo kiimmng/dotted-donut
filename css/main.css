@@ -1,0 +1,1431 @@
+* {
+    box-sizing: border-box;
+}
+
+body {
+    padding: 0;
+    margin: 0;
+    font-family: Poppins, 'sans-serif';
+    color: #191919;
+}
+
+/* menu */
+.navbar-toggler i {
+    display: inline-block;
+    color: white;
+    vertical-align: middle;
+}
+
+.navbar-toggler:hover {
+    border: none;
+}
+
+.navbar-toggler:focus {
+    box-shadow: none;
+}
+
+/* menu responsive */
+.navbar ul {
+    font-size: 1.25rem;
+}
+
+@media only screen and (max-width: 912px) {
+    .navbar ul {
+        font-size: 1.3rem;
+    }
+}
+
+@media only screen and (max-width: 540px) {
+    .navbar ul {
+        font-size: .8rem;
+    }
+}
+
+/* ----------------------------------------------------------- */
+/* Shopping cart */
+.shopping {
+    width: 5rem;
+    height: 5rem;
+    background-color: #3C2F21;
+    z-index: 99999999999999;
+    border-radius: 5rem;
+    box-shadow: .2rem .2rem 1rem rgb(90, 70, 50, .5);
+    bottom: 4%;
+    right: 2%;
+}
+
+.shopping i {
+    font-size: 2rem
+}
+
+/* responsive */
+@media only screen and (max-width:912px) {
+    .shopping {
+        width: 6rem;
+        height: 6rem;
+        bottom: 3%;
+        right: 3%;
+    }
+
+    .shopping i {
+        font-size: 2.5rem
+    }
+}
+
+@media only screen and (max-width:768px) {
+    .shopping {
+        width: 5rem;
+        height: 5rem;
+    }
+
+    .shopping i {
+        font-size: 2rem
+    }
+}
+
+@media only screen and (max-width:540px) {
+    .shopping {
+        width: 3.5rem;
+        height: 3.5rem;
+    }
+
+    .shopping i {
+        font-size: 1.3rem
+    }
+}
+
+@media only screen and (max-width:280px) {
+    .shopping {
+        width: 2.8rem;
+        height: 2.8rem;
+    }
+
+    .shopping i {
+        font-size: 1rem
+    }
+}
+
+/* --------------------------------------------------------------- */
+/* HOMEPAGE */
+/* page-01 */
+#home #page-01 img {
+    object-position: 80% 50%;
+}
+
+#home #page-01 a.btn {
+    --bs-btn-padding-y: .4rem;
+    --bs-btn-padding-x: 1.25rem;
+    background-color: #E88E2C;
+    color: white;
+    border-radius: 2rem;
+}
+
+#home #page-01 a.btn:hover {
+    background-color: #5A4632;
+    transition: all ease-in-out .8s;
+}
+
+#home #page-01 .text p {
+    font-size: calc(1.275rem + 0.3vw);
+}
+
+#home #page-01 .text h1 {
+    font-size: calc(6rem + 0.3vw);
+}
+
+#home #page-01 .text a {
+    font-size: calc(.75rem + 0.3vw);
+}
+
+/* responsive */
+@media only screen and (max-width: 912px) {
+    #home #page-01 .text {
+        top: 20%
+    }
+
+    #home #page-01 .text p {
+        font-size: calc(1.75rem + 0.3vw)
+    }
+
+    #home #page-01 .text h1 {
+        font-size: calc(5rem + 0.3vw)
+    }
+
+    #home #page-01 .text a {
+        --bs-btn-padding-y: .4rem;
+        --bs-btn-padding-x: 1.75rem;
+        border-radius: 2rem;
+        font-size: calc(1.25rem + 0.3vw);
+    }
+}
+
+@media only screen and (max-width: 540px) {
+    #home #page-01 .text {
+        top: 20%
+    }
+
+    #home #page-01 .text p {
+        font-size: calc(.8rem + 0.1vw)
+    }
+
+    #home #page-01 .text h1 {
+        font-size: calc(3rem + 0.1vw)
+    }
+
+    #home #page-01 .text a {
+        --bs-btn-padding-y: .25rem;
+        --bs-btn-padding-x: 1rem;
+        border-radius: 2rem;
+        font-size: calc(.7rem + 0.1vw);
+    }
+}
+
+@media only screen and (max-width: 280px) {
+    #home #page-01 .text h1 {
+        font-size: calc(2.3rem + 0.1vw)
+    }
+}
+
+/* -------------------- */
+/* page-02 */
+#home .content {
+    height: 100%;
+}
+
+@media only screen and (max-width: 768px) {
+    #home .content {
+        height: 50%;
+        width: 100%;
+    }
+}
+
+#home #page-02 .text h1 {
+    font-size: calc(1.3rem + 0.6vw);
+}
+
+#home #page-02 .text p {
+    font-size: 1rem;
+}
+
+@media only screen and (max-width: 380px) {
+    #home #page-02 .text h1 {
+        font-size: calc(1.1rem + 0.3vw)
+    }
+
+    #home #page-02 .text p {
+        font-size: .9rem;
+    }
+}
+
+#home #page-02 img {
+    object-position: 40% 50%;
+}
+
+/* ------------------------ */
+/* page-03 slide */
+#page-slide .carousel-item img {
+    object-position: 50% 70%;
+    opacity: .8;
+}
+
+#page-slide .carousel-item {
+    transition: transform ease-in-out 1.5s;
+    scroll-behavior: smooth;
+}
+
+#page-slide .text p {
+    color: white;
+    font-size: 1.3rem;
+    font-weight: 500;
+}
+
+#page-slide .text img {
+    width: 50%;
+    padding-bottom: 1.2rem;
+}
+
+/* responsive */
+@media only screen and (max-width: 912px) {
+    #page-slide .text {
+        top: 30%
+    }
+
+    #page-slide .text p {
+        font-size: 1.1rem;
+    }
+
+}
+
+@media only screen and (max-width: 415px) {
+    #page-slide .text img {
+        width: 75%;
+        padding-bottom: 0.4rem;
+    }
+
+    #page-slide .text p {
+        font-size: 0.7rem;
+        padding: 0 15%;
+        font-weight: 400;
+    }
+}
+
+/* ------------------------ */
+/* page-03 button */
+#page-slide a.btn {
+    --bs-btn-padding-y: .35rem;
+    --bs-btn-padding-x: 1.25rem;
+    background-color: #E88E2C;
+    color: white;
+    border-radius: 2rem;
+    margin-top: 1.3rem;
+}
+
+#page-slide a.btn:hover {
+    background-color: #5A4632;
+    transition: all ease-in-out .8s;
+}
+
+#page-slide .text a {
+    font-size: calc(.75rem + 0.3vw);
+}
+
+/* responsive */
+@media only screen and (max-width: 912px) {
+    #page-slide .text a {
+        --bs-btn-padding-y: .3rem;
+        --bs-btn-padding-x: 1.6rem;
+        border-radius: 2rem;
+        font-size: calc(1.2rem + 0.3vw);
+    }
+}
+
+
+@media only screen and (max-width: 540px) {
+    #page-slide .text a {
+        --bs-btn-padding-y: .2rem;
+        --bs-btn-padding-x: .8rem;
+        border-radius: 2rem;
+        font-size: calc(.6rem + 0.1vw);
+    }
+}
+
+/* ------------------------------------------------------------ */
+/* FOOTER */
+/* footer content-1*/
+#footer #content-1 {
+    height: 30%;
+    padding-top: calc(7rem + 2vh);
+    color: white;
+}
+
+#footer #content-1 .text {
+    font-size: 1.5rem;
+}
+
+/* responsive */
+@media only screen and (max-width: 912px) {
+    #footer #content-1 {
+        padding-top: calc(10rem + 3vh);
+    }
+
+    #footer #content-1 .text {
+        width: 60%;
+        margin: auto;
+        font-size: 1.5rem;
+    }
+}
+
+@media only screen and (max-width: 768px) {
+    #footer #content-1 {
+        padding-top: calc(7.5rem + 3vh);
+    }
+
+    #footer #content-1 .text {
+        width: 60%;
+        margin: auto;
+        font-size: 1.4rem;
+    }
+}
+
+@media only screen and (max-width: 540px) {
+    #footer #content-1 {
+        padding-top: calc(5.5rem + 4vh);
+    }
+
+    #footer #content-1 .text {
+        width: 65%;
+        margin: auto;
+        font-size: .9rem;
+    }
+}
+
+@media only screen and (max-width: 280px) {
+    #footer #content-1 {
+        padding-top: calc(5rem + 4vh);
+    }
+
+    #footer #content-1 .text {
+        width: 90%;
+        margin: auto;
+        font-size: .8rem;
+    }
+}
+
+/* ------------------------- */
+/* footer content-2 */
+#footer #content-2 {
+    height: 60%;
+}
+
+#footer #content-2 .content {
+    width: 80%;
+    font-size: 1.3rem;
+    padding-top: 5rem;
+}
+
+#footer #content-2 .form {
+    width: 80%;
+}
+
+#footer #content-2 .form input {
+    font-size: 1.2rem;
+}
+
+#footer #content-2 .form input:focus {
+    outline: 0;
+    box-shadow: 0 0 0 0.15rem rgba(93, 108, 43, 0.45);
+}
+
+#footer #content-2 button {
+    --bs-btn-padding-y: .2rem;
+    --bs-btn-padding-x: 3rem;
+    width: auto;
+    background-color: #E88E2C;
+    color: white;
+    font-size: 1.2rem;
+}
+
+#footer #content-2 .btn:hover {
+    background-color: rgb(93, 108, 43);
+    transition: all ease-in-out .4s;
+}
+
+/* responsive */
+@media only screen and (max-width: 912px) {
+    #footer #content-2 .content {
+        width: 80%;
+        font-size: 1.7rem;
+        padding-top: calc(10rem + 3vh);
+    }
+
+    #footer #content-2 .form {
+        width: 90%;
+    }
+
+    #footer #content-2 .form input {
+        font-size: 1.5rem;
+    }
+
+    #footer #content-2 button {
+        --bs-btn-padding-y: .4rem;
+        --bs-btn-padding-x: 3rem;
+        width: auto;
+        font-size: 1.5rem;
+    }
+}
+
+@media only screen and (max-width: 768px) {
+    #footer #content-2 .content {
+        width: 80%;
+        font-size: 1.5rem;
+        padding-top: calc(8rem + 3vh);
+    }
+
+    #footer #content-2 .form {
+        width: 90%;
+    }
+
+    #footer #content-2 .form input {
+        font-size: 1.4rem;
+    }
+
+    #footer #content-2 button {
+        --bs-btn-padding-y: .4rem;
+        --bs-btn-padding-x: 3rem;
+        width: auto;
+        font-size: 1.4rem;
+    }
+}
+
+@media only screen and (max-width: 540px) {
+    #footer #content-2 .content {
+        width: 80%;
+        font-size: 1rem;
+        padding-top: calc(5rem + 3vh);
+    }
+
+    #footer #content-2 .form {
+        width: 90%;
+    }
+
+    #footer #content-2 .form input {
+        font-size: .9rem;
+    }
+
+    #footer #content-2 button {
+        --bs-btn-padding-y: .2rem;
+        --bs-btn-padding-x: 2rem;
+        width: auto;
+        font-size: .9rem;
+    }
+}
+
+@media only screen and (max-width: 280px) {
+    #footer #content-2 .content {
+        width: 80%;
+        font-size: .8rem;
+        padding-top: calc(5rem + 3vh);
+    }
+
+    #footer #content-2 .form {
+        width: 100%;
+    }
+
+    #footer #content-2 .form input {
+        font-size: .7rem;
+    }
+
+    #footer #content-2 button {
+        --bs-btn-padding-y: .2rem;
+        --bs-btn-padding-x: 1.5rem;
+        width: auto;
+        font-size: .7rem;
+    }
+}
+
+/* ------------------------- */
+/* footer content-3 */
+#footer #content-3 {
+    height: 10%;
+    color: white;
+    font-weight: lighter;
+    font-size: .8rem;
+    opacity: .5;
+    padding-top: calc(1rem + 2vh);
+}
+
+/* responsive */
+@media only screen and (max-width: 912px) {
+    #footer #content-3 {
+        font-size: 1.1rem;
+        padding-top: calc(1.2rem + 3vh);
+    }
+}
+
+@media only screen and (max-width: 768px) {
+    #footer #content-3 {
+        font-size: 1rem;
+        padding-top: calc(1.1rem + 3vh);
+    }
+}
+
+@media only screen and (max-width: 540px) {
+    #footer #content-3 {
+        font-size: .7rem;
+        padding-top: calc(.9rem + 3vh);
+    }
+}
+
+@media only screen and (max-width: 280px) {
+    #footer #content-3 {
+        font-size: .6rem;
+        padding-top: calc(.9rem + 2vh);
+    }
+}
+
+/* -------------------------------------------------------------- */
+/* PRODUCT */
+/* page-01 */
+#product #page-01 img {
+    object-position: 40% 45%;
+}
+
+#product #page-01 a.btn {
+    --bs-btn-padding-y: .4rem;
+    --bs-btn-padding-x: 1.25rem;
+    background-color: #E88E2C;
+    color: white;
+    border-radius: 2rem;
+}
+
+#product #page-01 a.btn:hover {
+    background-color: #5A4632;
+    transition: all ease-in-out .8s;
+}
+
+#product #page-01 .text p {
+    font-size: calc(1.275rem + 0.3vw);
+}
+
+#product #page-01 .text h1 {
+    font-size: calc(6rem + 0.3vw);
+}
+
+#product #page-01 .text a {
+    font-size: calc(.75rem + 0.3vw);
+}
+
+/* responsive */
+@media only screen and (max-width: 912px) {
+    #product #page-01 .text {
+        top: 20%
+    }
+
+    #product #page-01 .text p {
+        font-size: calc(1.75rem + 0.3vw)
+    }
+
+    #product #page-01 .text h1 {
+        font-size: calc(5rem + 0.3vw)
+    }
+
+    #product #page-01 .text a {
+        --bs-btn-padding-y: .4rem;
+        --bs-btn-padding-x: 1.75rem;
+        border-radius: 2rem;
+        font-size: calc(1.25rem + 0.3vw);
+    }
+}
+
+@media only screen and (max-width: 540px) {
+    #product #page-01 .text {
+        top: 20%
+    }
+
+    #product #page-01 .text p {
+        font-size: calc(.8rem + 0.1vw)
+    }
+
+    #product #page-01 .text h1 {
+        font-size: calc(3rem + 0.1vw)
+    }
+
+    #product #page-01 .text a {
+        --bs-btn-padding-y: .25rem;
+        --bs-btn-padding-x: 1rem;
+        border-radius: 2rem;
+        font-size: calc(.7rem + 0.1vw);
+    }
+}
+
+@media only screen and (max-width: 280px) {
+    #home #page-01 .text h1 {
+        font-size: calc(2.3rem + 0.1vw)
+    }
+}
+
+/* ------------------------------- */
+/* page-02-03 */
+#product .text-head {
+    padding-top: calc(6rem + 4vh);
+    font-size: calc(3rem);
+    padding-bottom: calc(1rem + 4vh);
+    color: white;
+}
+
+#product .pro-list {
+    height: 20rem;
+    font-size: .9rem;
+    line-height: 1.2rem;
+}
+
+#product .pro-list .img {
+    height: 65%;
+}
+
+#product .pro-list img {
+    height: 100%;
+    object-fit: cover;
+    object-position: 50% 35%;
+}
+
+#product .pro-list .card-body {
+    height: 20%;
+}
+
+#product .pro-list .card-body .pro-tit {
+    height: 75%;
+    font-size: 1.1rem;
+}
+
+#product .pro-list .card-footer {
+    display: flex;
+    height: 15%;
+}
+
+#product .pro-list .btn {
+    --bs-btn-padding-y: .4rem;
+    --bs-btn-padding-x: 1.15rem;
+    border: solid .05rem #5A4632;
+    color: #5A4632;
+    font-size: .8rem;
+    border-radius: 2rem;
+}
+
+#product .pro-list .btn:hover {
+    background-color: #E88E2C;
+    transition: all ease-in .4s;
+    color: white;
+    border: solid .05rem white;
+}
+
+/* responsive */
+@media only screen and (max-width: 912px) {
+    #product .text-head {
+        padding-top: calc(6rem + 4vh);
+        padding-bottom: calc(2rem + 4vh);
+
+    }
+
+    #product .pro-list {
+        height: 25rem;
+        font-size: 1.1rem;
+        line-height: 1.5rem;
+    }
+
+    #product .pro-list .img {
+        height: 65%;
+    }
+
+    #product .pro-list img {
+        height: 100%;
+    }
+
+    #product .pro-list .card-body {
+        height: 20%;
+    }
+
+    #product .pro-list .card-body .pro-tit {
+        font-size: 1.3rem;
+    }
+
+    #product .pro-list .card-footer {
+        height: 15%;
+    }
+
+    #product .pro-list .btn {
+        font-size: 1rem;
+    }
+}
+
+@media only screen and (max-width:768px) {
+    #product .text-head {
+        padding-top: calc(5rem + 2vh);
+        padding-bottom: calc(1.5rem + 2vh);
+    }
+
+    #product .pro-list {
+        height: 22rem;
+        font-size: 1rem;
+    }
+
+    #product .pro-list .img {
+        height: 60%;
+    }
+
+    #product .pro-list img {
+        height: 100%;
+    }
+
+    #product .pro-list .card-body {
+        height: 20%;
+    }
+
+    #product .pro-list .card-body .pro-tit {
+        font-size: 1.275rem;
+    }
+
+    #product .pro-list .card-footer {
+        height: 20%;
+    }
+
+    #product .pro-list .btn {
+        font-size: .9rem;
+    }
+}
+
+@media only screen and (max-width:540px) {
+    #product .text-head {
+        padding-top: calc(4rem + 4vh);
+        font-size: 1.5rem;
+
+    }
+
+    #product .pro-list {
+        height: 15rem;
+        font-size: .65rem;
+        line-height: 1rem;
+    }
+
+    #product .pro-list .img {
+        height: 60%;
+    }
+
+    #product .pro-list img {
+        height: 100%;
+    }
+
+    #product .pro-list .card-body {
+        height: 22%;
+    }
+
+    #product .pro-list .card-body .pro-tit {
+        font-size: .75rem;
+    }
+
+    #product .pro-list .card-footer {
+        height: 18%;
+    }
+
+    #product .pro-list .btn {
+        --bs-btn-padding-y: .25rem;
+        --bs-btn-padding-x: .85rem;
+        font-size: .6rem;
+    }
+}
+
+@media only screen and (max-width:280px) {
+    #product .text-head {
+        padding-top: calc(4rem + 2vh);
+        font-size: 1.2rem;
+
+    }
+
+    #product .pro-list {
+        height: 15rem;
+        font-size: .55rem;
+        line-height: .7rem;
+    }
+
+    #product .pro-list .img {
+        height: 60%;
+    }
+
+    #product .pro-list img {
+        height: 100%;
+    }
+
+    #product .pro-list .card-body {
+        height: 15%;
+    }
+
+    #product .pro-list .card-body .pro-tit {
+        font-size: .6rem;
+    }
+
+    #product .pro-list .card-footer {
+        display: grid;
+        height: 25%;
+    }
+
+    #product .pro-list .btn {
+        --bs-btn-padding-y: .2rem;
+        --bs-btn-padding-x: .5rem;
+        font-size: .55rem;
+    }
+
+    #product .pro-list .price {
+        grid-area: 1;
+        padding-bottom: .4rem;
+    }
+}
+
+/* -------------------------------------------------- */
+/* product-details */
+/* text */
+#pro-details {
+    background-color: var(--background-color);
+    color: white;
+}
+
+#pro-details #page-01 .content {
+    padding-top: calc(6rem + 4vh);
+    font-size: 1rem;
+    line-height: 1.3rem;
+}
+
+#pro-details #page-01 .content .cont-2 {
+    height: 100%;
+}
+
+#pro-details #page-01 .content .cont-1 h1 {
+    font-size: 2rem;
+}
+
+#pro-details #page-01 .content .price {
+    padding-bottom: calc(2rem + 2vh);
+    color: var(--price-color)
+}
+
+#pro-details #page-01 .content h5 {
+    font-size: 1.4rem;
+}
+
+#pro-details #page-01 .content .add {
+    margin-top: calc(2rem + 3vh);
+    --bs-padding-y: .5rem;
+}
+
+#pro-details #page-01 .content .add .add-1 {
+    width: 50%;
+    margin-right: calc(1rem + 1vw);
+    background-color: transparent;
+    border-radius: .5rem;
+    box-shadow: .3rem .3rem 1rem rgba(186, 148, 107, 0.2);
+}
+
+#pro-details #page-01 .content .add .add-1 .col-4 {
+    height: 100%;
+    background-color: var(--primary-color);
+}
+
+#pro-details #page-01 .content .add .add-1 .col-4:first-child {
+    border-radius: .5rem 0 0 .5rem;
+}
+
+#pro-details #page-01 .content .add .add-1 .col-4:last-child {
+    border-radius: 0 .5rem .5rem 0;
+}
+
+#pro-details #page-01 .content .add .add-1 .col-4:first-child:hover,
+#pro-details #page-01 .content .add .add-1 .col-4:last-child:hover {
+    background-color: var(--secondary-color);
+    color: var(--primary-color);
+    transition: all ease .5s;
+}
+
+#pro-details #page-01 .content .add .add-1 input {
+    background-color: inherit;
+    border: none;
+    color: white;
+}
+
+#pro-details #page-01 .content .add .btn {
+    --bs-btn-padding-x: calc(.5rem + 1vw);
+    --bs-btn-font-size: none;
+    background-color: var(--secondary-color);
+    color: var(--primary-color);
+    border-radius: .5rem;
+}
+
+#pro-details #page-01 .content .add .btn:hover {
+    background-color: var(--primary-color);
+    color: var(--secondary-color);
+    transition: all ease-in-out .5s;
+}
+
+/* responsive */
+@media only screen and (max-width:912px) {
+    #pro-details #page-01 .content {
+        padding-top: calc(2rem + 3vh);
+        font-size: 1.4rem;
+        line-height: 2rem;
+    }
+
+    #pro-details #page-01 .content .cont-1 {
+        height: 40%;
+        width: 100%;
+    }
+
+    #pro-details #page-01 .content .cont-2 {
+        height: 55%;
+        width: 100%;
+        padding-bottom: 5%;
+    }
+
+    #pro-details #page-01 .content .cont-1 h1 {
+        font-size: 3rem;
+    }
+
+    #pro-details #page-01 .content .price {
+        padding-bottom: calc(1rem + 2vh);
+    }
+
+    #pro-details #page-01 .content h5 {
+        font-size: 2.3rem;
+    }
+
+    #pro-details #page-01 .content .add {
+        margin-top: calc(1rem + 2vh);
+    }
+
+    #pro-details #page-01 .content .add .add-1 {
+        width: 30%;
+    }
+
+    #pro-details #page-01 .content .add .btn {
+        --bs-btn-padding-x: calc(1.2rem + 1vw);
+    }
+}
+
+@media only screen and (max-width: 768px) {
+    #pro-details #page-01 .content {
+        padding-top: calc(4rem + 2vh);
+        font-size: 1.3rem;
+        line-height: 1.8rem;
+    }
+
+    #pro-details #page-01 .content .cont-1 {
+        height: 40%;
+        width: 100%;
+    }
+
+    #pro-details #page-01 .content .cont-2 {
+        height: 55%;
+        width: 100%;
+    }
+
+    #pro-details #page-01 .content .cont-1 h1 {
+        font-size: 2.4rem;
+    }
+
+    #pro-details #page-01 .content .price {
+        padding-bottom: calc(1rem + 1vh);
+    }
+
+    #pro-details #page-01 .content h5 {
+        font-size: 2rem;
+    }
+
+    #pro-details #page-01 .content .add {
+        margin-top: calc(1rem + 1vh);
+    }
+}
+
+@media only screen and (max-width:540px) {
+    #pro-details #page-01 .content {
+        padding-top: calc(4rem + 1vh);
+        font-size: .8rem;
+        line-height: 1.1rem;
+    }
+
+    #pro-details #page-01 .content .cont-1 {
+        height: 35%;
+        width: 100%;
+    }
+
+    #pro-details #page-01 .content .cont-2 {
+        height: 60%;
+        width: 100%;
+    }
+
+    #pro-details #page-01 .content .cont-1 h1 {
+        font-size: 1.2rem;
+    }
+
+    #pro-details #page-01 .content .price {
+        padding-bottom: .7rem;
+    }
+
+    #pro-details #page-01 .content h5 {
+        font-size: 1.2rem;
+    }
+
+    #pro-details #page-01 .content .add {
+        margin-top: 1.2rem;
+        font-size: .8rem;
+    }
+
+    #pro-details #page-01 .content .add .add-1 {
+        width: 40%;
+    }
+
+    #pro-details #page-01 .content .add .btn {
+        --bs-btn-padding-x: calc(1rem + 1vw);
+    }
+
+}
+
+@media only screen and (max-width:280px) {
+    #pro-details #page-01 .content {
+        padding-top: calc(2rem + 3vh);
+        font-size: .7rem;
+        line-height: 1rem;
+    }
+
+    #pro-details #page-01 .content .cont-1 {
+        height: 30%;
+        width: 100%;
+    }
+
+    #pro-details #page-01 .content .cont-2 {
+        height: 60%;
+        width: 100%;
+    }
+
+    #pro-details #page-01 .content .cont-1 h1 {
+        font-size: 1rem;
+    }
+
+    #pro-details #page-01 .content .price {
+        padding-bottom: 1rem;
+    }
+
+    #pro-details #page-01 .content h5 {
+        font-size: 1rem;
+    }
+
+    #pro-details #page-01 .content .add {
+        margin-top: 1.5rem;
+        font-size: .6rem;
+    }
+
+    #pro-details #page-01 .content .add .add-1 {
+        width: 50%;
+    }
+
+    #pro-details #page-01 .content .add .btn {
+        --bs-btn-padding-x: calc(.5rem + 1vw);
+    }
+}
+
+/* -------------------- */
+/* image */
+#pro-details #page-01 .content .cont-2 .img {
+    height: 100vh;
+}
+
+#pro-details #page-01 .content .cont-2 img {
+    border-radius: 1rem;
+}
+
+#pro-details #page-01 .content .cont-2 .img-1 {
+    width: 70%;
+    height: 70%;
+}
+
+#pro-details #page-01 .content .cont-2 .img-2 {
+    width: 25%;
+    height: 70%;
+    margin-left: calc(1rem + 1vw);
+}
+
+#pro-details #page-01 .content .cont-2 .img-2 .img-c {
+    width: 100%;
+    height: 30%;
+}
+
+@media only screen and (max-width: 912px) {
+    #pro-details #page-01 .content .cont-2 .img {
+        height: 50vh;
+        margin-top: 2%;
+    }
+
+    #pro-details #page-01 .content .cont-2 .img-1 {
+        width: 100%;
+        height: 60%;
+    }
+
+    #pro-details #page-01 .content .cont-2 .img-2 {
+        height: 40%;
+        width: 100%;
+        margin-left: 0;
+        padding-bottom: 5%;
+        padding-top: 5%;
+    }
+
+    #pro-details #page-01 .content .cont-2 .img-2 .img-c {
+        width: 30%;
+        height: 100%;
+        ;
+    }
+}
+
+@media only screen and (max-width: 768px) {
+    #pro-details #page-01 .content .cont-2 .img {
+        height: 50vh;
+        margin-top: 2%;
+    }
+
+    #pro-details #page-01 .content .cont-2 .img-2 {
+        padding-bottom: 5%;
+    }
+
+    #pro-details #page-01 .content .cont-2 img {
+        border-radius: .5rem;
+    }
+}
+
+@media only screen and (max-width: 540px) {
+    #pro-details #page-01 .content .cont-2 .img {
+        height: 50vh;
+        margin-top: 8%;
+    }
+
+
+    #pro-details #page-01 .content .cont-2 .img-2 {
+
+        padding-top: 5%;
+    }
+
+}
+
+@media only screen and (max-width: 280px) {
+    #pro-details #page-01 .content .cont-2 .img {
+        height: 50vh;
+        margin-top: 30%;
+    }
+
+    #pro-details #page-01 .content .cont-2 .img-1 {
+        width: 100%;
+        height: 60%;
+    }
+
+    #pro-details #page-01 .content .cont-2 .img-2 {
+        height: 40%;
+        width: 100%;
+        margin-left: 0;
+        padding-bottom: 10%;
+        padding-top: 5%;
+    }
+
+    #pro-details #page-01 .content .cont-2 .img-2 .img-c {
+        width: 30%;
+        height: 100%;
+        ;
+    }
+}
+/* ----------------------------------------------------- */
+/* about-us */
+#aboutus {
+    background-color: var(--background-color);
+    color: white;
+}
+
+#aboutus #page-01 .content {
+    padding-top: calc(4rem + 4vh);
+    font-size: .8rem;
+    line-height: 1.2rem;
+}
+
+#aboutus #page-01 .content .cont-2 {
+    height: 100%;
+}
+
+#aboutus #page-01 .content .cont-1 h1 {
+    font-size: 4.5rem;
+}
+
+#aboutus #page-01 .content .cont-2 .img {
+    height: 80vh;
+}
+
+#aboutus #page-01 .content .cont-2 img {
+    border-radius: 1rem;
+}
+/* responsive */
+@media only screen and (max-width:912px) {
+    #aboutus #page-01 .content {
+        padding-top: calc(3.2rem + 4vh);
+        font-size: 1.2rem;
+        line-height: 2rem;
+    }
+
+    #aboutus #page-01 .content .cont-1 {
+        height: 40%;
+        width: 100%;
+    }
+
+    #aboutus #page-01 .content .cont-2 {
+        height: 55%;
+        width: 100%;
+    }
+
+    #aboutus #page-01 .content .cont-1 h1 {
+        font-size: 4rem;
+    }
+
+    #aboutus #page-01 .content .cont-2 .img {
+        height: 50vh;
+    }
+}
+
+@media only screen and (max-width: 768px) {
+    #aboutus #page-01 .content {
+        padding-top: calc(4rem + 2vh);
+        font-size: 1.1rem;
+        line-height: 1.5rem;
+    }
+
+    #aboutus #page-01 .content .cont-1 {
+        height: 40%;
+        width: 100%;
+    }
+
+    #aboutus #page-01 .content .cont-2 {
+        height: 55%;
+        width: 100%;
+    }
+
+    #aboutus #page-01 .content .cont-1 h1 {
+        font-size: 4rem;
+    }
+}
+
+@media only screen and (max-width:540px) {
+    #aboutus #page-01 .content {
+        padding-top: calc(3rem + 2vh);
+        font-size: .675rem;
+        line-height: .9rem;
+    }
+
+    #aboutus #page-01 .content .cont-1 {
+        height: 35%;
+        width: 100%;
+    }
+
+    #aboutus #page-01 .content .cont-2 {
+        height: 50%;
+        width: 100%;
+    }
+
+    #aboutus #page-01 .content .cont-1 h1 {
+        font-size: 2rem;
+    }
+
+}
+
+@media only screen and (max-width:280px) {
+    #aboutus #page-01 .content {
+        padding-top: calc(2rem + 3vh);
+        font-size: .575rem;
+        line-height: .8rem;
+    }
+
+    #aboutus #page-01 .content .cont-1 {
+        height: 30%;
+        width: 100%;
+    }
+
+    #aboutus #page-01 .content .cont-2 {
+        height: 50%;
+        width: 100%;
+        margin-top: 10%;
+    }
+
+    #aboutus #page-01 .content .cont-1 h1 {
+        font-size: 1.7rem;
+    }
+}
+/* ----------------------------------------------------- */
+/* contact information */
+#info {
+    background-color: var(--background-color);
+    color: white;
+}
+
+#info #page-01 .content {
+    padding-top: calc(3.8rem + 3vh);
+    font-size: 1rem;
+    line-height: 1.5rem;
+}
+
+#info #page-01 .content .cont-1 h1 {
+    font-size: 4.5rem;
+}
+
+/* responsive */
+@media only screen and (max-width:912px) {
+    #info #page-01 .content {
+        padding-top: calc(3.2rem + 4vh);
+        font-size: 1.6rem;
+        line-height: 2.2rem;
+    }
+
+    #info #page-01 .content .cont-1 {
+        height: 40%;
+        width: 100%;
+    }
+    #info #page-01 .content .cont-1 h1 {
+        font-size: 5rem;
+    }
+}
+
+@media only screen and (max-width: 768px) {
+    #info #page-01 .content {
+        padding-top: calc(4rem + 2vh);
+        font-size: 1.3rem;
+        line-height: 1.8rem;
+    }
+
+    #info #page-01 .content .cont-1 {
+        height: 40%;
+        width: 100%;
+    }
+
+
+    #info #page-01 .content .cont-1 h1 {
+        font-size: 4rem;
+    }
+
+}
+
+@media only screen and (max-width:540px) {
+    #info #page-01 .content {
+        padding-top: calc(3rem + 2vh);
+        font-size: .8rem;
+        line-height: 1.2rem;
+    }
+
+    #info #page-01 .content .cont-1 {
+        height: 35%;
+        width: 100%;
+    }
+
+    #info #page-01 .content .cont-1 h1 {
+        font-size: 2.5rem;
+    }
+
+}
+
+@media only screen and (max-width:280px) {
+    #info #page-01 .content {
+        padding-top: calc(2rem + 3vh);
+        font-size: .7rem;
+        line-height: 1rem;
+    }
+
+    #info #page-01 .content .cont-1 {
+        height: 30%;
+        width: 100%;
+    }
+
+    #info #page-01 .content .cont-1 h1 {
+        font-size: 2rem;
+    }
+}
+
+/* ---------------------- */
+
+#info .cont .form input {
+    font-size: inherit;
+}
+
+#info .cont .form input:focus {
+    outline: 0;
+    box-shadow: 0 0 0 0.15rem var(--primary-color);
+}
+
+#info .cont button {
+    --bs-btn-padding-y: .3rem;
+    --bs-btn-padding-x: 2rem;
+    width: auto;
+    background-color: #53726d;
+    color: white;
+    font-size: inherit;
+}
+
+#info .cont .btn:hover {
+    background-color: #7a9f99;
+    transition: all ease-in-out .4s;
+}

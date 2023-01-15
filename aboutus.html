@@ -1,0 +1,113 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>dotted</title>
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700;800&display=swap"
+        rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/fullPage.js/4.0.9/fullpage.css"
+        integrity="sha512-zDKgq9gDZL1N3buxzFPZjHwqDOFsgTyhR0aJtXLFTIjEFovumXMaVeF6iBUZ/Rc4Mb0IqRrhqAY+RY7OCUBo6A=="
+        crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <link href="css/bootstrap.css" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.1/css/all.min.css"
+        integrity="sha512-MV7K8+y+gLIBoVD59lQIYicR65iaqukzvf/nwasF0nqhPay5w/9lJmVM2hMDcnK1OnMGCdVK+iQrJ7lzPJQd1w=="
+        crossorigin="anonymous" referrerpolicy="no-referrer">
+    <link rel="stylesheet" href="css/reset.css">
+    <link rel="stylesheet" href="css/main.css">
+    <style>
+        :root {
+            --primary-color: #a99279;
+            --secondary-color: #f1e6d3;
+            --background-color: #a79073;
+        }
+    </style>
+</head>
+
+<body class="overflow-hidden">
+    <header>
+        <!-- MENU BAR -->
+        <nav class="navbar navbar-expand-lg navbar-dark fixed-top mt-0">
+            <div class="container-fluid mx-md-4 mx-1">
+                <button class="navbar-toggler border-0 px-0" type="button" data-bs-toggle="offcanvas"
+                    data-bs-target="#offcanvasNavbar" aria-controls="offcanvasNavbar">
+                    <span><i class="fa-solid fa-circle-dot fs-1"></i></span>
+                </button>
+                <a class="navbar-brand col-6 col-lg-2 col-md-4 col-sm-5 mx-0" href="index.html">
+                    <img class="object-fit-cover w-75 float-lg-start float-end" src="img/logo.svg" alt="">
+                </a>
+                <div class="offcanvas offcanvas-start w-50" tabindex="-1" id="offcanvasNavbar"
+                    aria-labelledby="offcanvasNavbarLabel" style="background-color: var(--primary-color);">
+                    <div class="offcanvas-header w-100 justify-content-end position-absolute">
+                        <button type="button" class="btn-close" data-bs-dismiss="offcanvas" aria-label="Close"
+                            style="scale: .8;"></button>
+                    </div>
+                    <div class="offcanvas-body justify-content-lg-end">
+                        <ul class="navbar-nav mb-2 mb-lg-0 ps-1 fw-medium  ">
+                            <li class="nav-item">
+                                <a class="nav-link" href="index.html">Home</a>
+                            </li>
+                            <li class="nav-item">
+                                <a class="nav-link active" aria-current="page" href="aboutus.html">About Us</a>
+                            </li>
+                            <li class="nav-item">
+                                <a class="nav-link" href="product.html">Product</a>
+                            </li>
+                            <li class="nav-item">
+                                <a class="nav-link" href="contact.html">Contact</a>
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </nav>
+    </header>
+
+    <main id="aboutus">
+        <div class="shopping position-fixed d-flex align-items-center justify-content-center">
+            <i class="fa-solid fa-basket-shopping" style="color: white;"></i>
+        </div>
+        <!-- Page-01 -->
+        <div class="container-fluid vh-100 vw-100 px-0 position-relative" id="page-01">
+            <div class="d-flex flex-wrap h-100 px-3 px-md-5 content">
+                <div class="col-lg-5 col-12 cont-1">
+                    <h1 class="fw-bold lh-1 pe-2">WHO WE ARE?</h1>
+                    <div class="d-flex pt-3 pt-md-4">
+                    </div>
+                    <div class="fw-light pe-0 pe-lg-5">
+                        <p><span class="fw-medium">dottie donut®</span> is one of the FASTEST-GROWING donut lovebrand franchises globally. We bring
+                        delicious, exclusive handmade donuts to your city! Always fresh, always sweet and always irresistibly tasty. Our gourmet donuts are handmade with love each morning according to our special secret recipe.</p>
+                        <p class="pt-2 pt-md-4">
+                        The global donut market is projected to grow over 12% p.a. over the next 10 years, and
+                        expected to reach $63 bn by 2025. The donuts are the most selling type of sweets in the world. These „cakes“ have their origin in
+                        Holland with long and rich history. More than 10 billion donuts are consumed only in the USA annually and this sweet pleasure gains more and more fans around the globe each year.
+                        </p>
+                    </div>
+                </div>
+                <div class="col-md-7 col-12 cont-2">
+                    <div class="img col-md-8 col-12 w-100">
+                        <img class="w-100 h-100 object-fit-cover" src="img/slide-07.jpg" alt="">
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        </div>
+    </main>
+    <!-- SCRIPT -->
+
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/fullPage.js/4.0.9/fullpage.min.js"
+        integrity="sha512-JSVRnP8UFs0ieN/cvP9v4vmW1CotIaEKKN7W+4JaKNrllZolTv2aJfVGn4BFdfZ1jRZxgTAAaXWdlZbEm9iwFA=="
+        crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+    <script src="js/bootstrap.bundle.js"></script>
+    <script src="js/bootstrap.js"></script>
+    <script src="js/custom.js"></script>
+
+</body>
+
+</html>
